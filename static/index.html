@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Package Coordinator Dashboard</h1>
+      <div class="toolbar">
+        <label>
+          Property
+          <select id="propertyFilter">
+            <option value="all">All</option>
+            <option value="encore">Berlin Encore</option>
+            <option value="resort">Berlin Resort</option>
+          </select>
+        </label>
+        <label>
+          Days
+          <input id="daysFilter" type="number" min="1" max="30" value="14" />
+        </label>
+        <button id="refreshBtn">Refresh</button>
+      </div>
+
+      <section>
+        <h2>Upcoming Packages</h2>
+        <table>
+          <thead><tr><th>Arrival</th><th>Property</th><th>Guest</th><th>Package</th><th>Status</th></tr></thead>
+          <tbody id="upcomingBody"></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Cancelled Reservations/Packages</h2>
+        <table>
+          <thead><tr><th>Arrival</th><th>Property</th><th>Guest</th><th>Package</th><th>Cancelled At</th></tr></thead>
+          <tbody id="cancelledBody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
