@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #1f2937; }
+main { max-width: 1000px; margin: 0 auto; }
+.toolbar { display: flex; gap: 1rem; align-items: end; margin-bottom: 1rem; }
+label { display: flex; flex-direction: column; gap: 0.25rem; }
+section { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #f1f5f9; text-align: left; padding: 0.5rem; font-size: 0.9rem; }
+h1, h2 { margin-top: 0; }
+button { height: 2rem; }
